@@ -45,7 +45,7 @@
             </div>
             <div class="rechargeButtons">
                 <button><img src="img/icons/icons8_layers_100px.png" alt="icon" style="width:15px;"> Buy Bundle</button>
-                <button><img src="img/icons/icons8_lightning_bolt_100px.png" alt="icon" style="width:15px;">Self Recharge</button>
+                <a href="recharge.html"><button><img src="img/icons/icons8_lightning_bolt_100px.png" alt="icon" style="width:15px;">Self Recharge</button></a>
             </div>
 
 
@@ -57,45 +57,49 @@
                 <div class="viewAll"><a href="#">View All</a></div>
             </div>
             <div class="buttonsGrp">
-                <div class="div1 butt">
-                    <div class="circle cir1"> <div class="text">Airtel Wifi</div></div>
-                    <!-- <div class="pop-up">NEW</div> -->
+                <div class="buttgroup1">
+                    <div class="div1 butt">
+                        <div class="circle cir1"> <div class="text">Airtel Wifi</div></div>
+                         <!-- <div class="pop-up">NEW</div> -->
                    
-                </div>
-                <div class="div2 butt">
-                    <div class="circle cir2"><div class="text">Recharge</div></div>
-                    <!-- <div class="pop-up">NEW</div> -->
+                    </div>
+                    <div class="div2 butt">
+                         <div class="circle cir2"><div class="text">Recharge</div></div>
+                        <!-- <div class="pop-up">NEW</div> -->
                     
-                </div>
-                <div class="div3 butt">
+                    </div>
+                    <div class="div3 butt">
                         <div class="circle cir3"><div class="text">Pay Bill</div></div>
                         <!-- <div class="pop-up">NEW</div> -->
                         
-                </div>
-                <div class="div4 butt">
+                    </div>
+                    <div class="div4 butt">
                         <div class="circle cir4"> <div class="text">Buy Data</div></div>
                         <!-- <div class="pop-up">NEW</div> -->
                        
+                    </div>
                 </div>
-                <div class="div5 butt">
+                <div class="buttgroup2">
+                    <div class="div5 butt">
                         <div class="circle cir5"> <div class="text">Hi Tunes</div></div>
                         <!-- <div class="pop-up">NEW</div> -->
                        
-                </div>
-                <div class="div6 butt">
+                    </div>
+                    <div class="div6 butt">
                         <div class="circle cir6"><div class="text">Submit NiN</div></div>
                         <div class="pop-up">NEW</div>
                         
-                </div>
-                <div class="div7 butt">
+                    </div>
+                    <div class="div7 butt">
                         <div class="circle cir7"><div class="text">News</div></div>
                         <!-- <div class="pop-up">NEW</div> -->
                         
-                </div>
-                <div class="div8 butt">
+                    </div>
+                    <div class="div8 butt">
                         <div class="circle cir8"><div class="text">Me2U</div></div>
                         <div class="pop-up">NEW</div>
                         
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,23 +129,6 @@
 
 
 
-<script>
-    let slideIndex = 0
-    showSlides()
-    function showSlides(){
-        let i;
-        let slides = document.getElementById('slide1');
-        for(i=0;i<slides.length;i++){
-            slides[i].style.display = 'none'
-        }
-        slideIndex++;
-        if(slideIndex>slides.length){slideIndex = 1
-        slides[slideIndex-1].style.display = 'block'
-        setTimeout(showSlides,2000)}
-    }
-
-</script>
-
 
 
 
@@ -156,5 +143,6 @@
 
 
     </div>
-</body>
+
+</body>    <script src="script.js"></script>
 </html>

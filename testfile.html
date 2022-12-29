@@ -1,0 +1,65 @@
+<div id="slideshow">
+    <div>
+       <img src="slide_1.png">
+    </div>   
+    <div>
+       <img src="slide_2.png">
+    </div>
+    <div>
+        <img src="slide_3.png">
+    </div>
+ </div>
+
+ <style>
+    #slideshow {  
+
+position: relative; 
+
+width: 900px; 
+
+height: 450px;  
+
+}
+
+#slideshow > div { 
+
+position: absolute; 
+
+}
+ </style>
+
+ <script>
+    function func(){
+  var imgLen = document.getElementById('imgGallary');
+  var images = imgLen.getElementsByTagName('img');
+  var counter = 1;
+
+  if (counter <= images.length) {
+    setInterval(function() {
+      images[0].src = images[counter].src;
+      console.log(images[counter].src);
+      counter++;
+
+      if (counter === images.length) {
+        counter = 1;
+      }
+    }, 4000);
+  }
+};
+
+// another SLIDESHOW method i find simplier
+var indexValue = 0;
+         function slideShow(){
+           setTimeout(slideShow, 2500);
+           var x;
+           const img = document.querySelectorAll("img");
+           for(x = 0; x < img.length; x++){
+             img[x].style.display = "none";
+           }
+           indexValue++;
+           if(indexValue > img.length){indexValue = 1}
+           img[indexValue -1].style.display = "block";
+         }
+         slideShow();
+
+ </script>

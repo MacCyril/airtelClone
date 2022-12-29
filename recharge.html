@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel App Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="rechargetopBar">
+            <div class="backIcon">
+               <a href='Index.html'><div class="icon"><img src='img/icons/icons8_left_arrow_48px.png'style="width:40px;"></img></div></a>
+                <div class="text">Enter Amount</div>
+            </div>
+        </div> 
+        <h4 class="h4">Airtime Recharge</h4>
+
+        <div class="displayCalc" id="display">
+            <div class="box">
+                <div class="den">NGN</div><span class="num" id="num"> </span>
+            </div>
+            <button class="clearicon" id="clear" onclick="clear1();"><img src="img/icons/icons8_clear_symbol_48px_2.png" alt="" ></button>
+        </div>
+        <div class="number">
+            <input type="button" value="1" onclick='document.getElementById("num").innerText += value'>
+            <input type="button" value="2" onclick='document.getElementById("num").innerText += value'>
+            <input type="button" value="3" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="4" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="5" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="6" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="7" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="8" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="9" onclick='document.getElementById("num").innerText += value' >
+            <input type="button" value="0" onclick='document.getElementById("num").innerText += value' style="margin-left:80px;">
+            <input type="submit" value="">
+        </div>
+
+
+        <a href="#" class="h4">Browse Plans >>>></a>
+
+
+
+
+
+
+
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
